@@ -30,10 +30,10 @@ const Hero = () => {
                 </div>
             </div>
         </div >
-        {/* <div className="flex justify-center items-center bg-primary bg-hero">
+        <div className="flex justify-center items-center bg-primary bg-hero">
             <img src={bigshoe1} alt="shoe hero" width={600} height={500}
           className=''/>
-        </div> */}
+        </div>
     </section>
   )
 }
