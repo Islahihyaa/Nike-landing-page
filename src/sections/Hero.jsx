@@ -5,11 +5,11 @@ const Hero = () => {
   return (
     <section 
         id='home'
-        className='w-full flex flex-col justify-center min-h-screen gap-16 py-28 md:flex-row'
+        className='w-full flex flex-col justify-center min-h-screen gap-16 md:flex-row'
     >
-        <div className='flex flex-col justify-center items-start px-8 '>
+        <div className='flex flex-col justify-center items-start px-8 py-24 md:py-26'>
             <p className='mb-8 text-coral-red text-xl font-semibold'>Our Summer Collection</p>
-            <h1 className='font-bold text-4xl mb-4 xl:text-8xl sm:max-w-sm xl:max-w-3xl '>The New Arrival 
+            <h1 className='font-bold text-4xl mb-4 xl:text-8xl max-w-sm xl:max-w-3xl '>The New Arrival 
                 <span className='text-coral-red'> Nike </span> Shoes
             </h1>
             <p className='text-slate-gray text-lg mb-10 max-w-[350px]'>Discover stylish Nike arrivals, quality, comfort, and innovation for your active life.</p>
