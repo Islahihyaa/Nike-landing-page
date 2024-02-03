@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar';
-import Services from './sections/Services';
+import PopularProduct from './sections/PopularProduct';
 import Hero from './sections/hero';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <>
     <Navbar />
     <Hero />
+    <PopularProduct />
     </>
 
   )
