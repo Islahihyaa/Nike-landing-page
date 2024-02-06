@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
         <section
         id="navbar"
-        className="fixed w-full items-center"
+        className="fixed w-full items-center bg-white shadow-sm"
         >
             <div className="flex flex-row justify-between items-center py-6 px-8 md:px-16">
                 
