@@ -63,16 +63,6 @@ const PopularProduct = () => {
             <h2 className="font-semibold text-lg  mt-6 font-montserrat">Nike Air Jordan-01</h2>
             <p className="font-bold text-2xl text-coral-red mt-1">$200.20</p>
           </div>
-          <div className="flex flex-col justify-start">
-              <img 
-              src={bigShoe2}
-              alt="bigShoe2"
-              width={200}
-              height={150}
-              className="border p-4 bg-primary rounded-lg" />
-            <h2 className="font-semibold text-lg  mt-6 font-montserrat">Nike Air Jordan-01</h2>
-            <p className="font-bold text-2xl text-coral-red mt-1">$200.20</p>
-          </div>
         </div>
 
       </div>

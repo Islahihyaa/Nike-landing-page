@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section 
         id='home'
-        className='w-full flex flex-col justify-center min-h-screen gap-16 md:flex-row'
+        className='w-full flex flex-col justify-center min-h-screen gap-16 md:flex-row max-container'
     >
         <div className='flex flex-col justify-center items-start px-8 py-24 md:py-26'>
             <p className='mb-8 text-coral-red text-xl font-semibold'>Our Summer Collection</p>
