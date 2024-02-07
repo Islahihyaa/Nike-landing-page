@@ -1,6 +1,20 @@
+import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { AiOutlineClose } from 'react-icons/ai';
+import { navLink } from "../constants";
 
 const Navbar = () => {
+
+    const [toggle , setToggle] = useState(false)
+
+    function openMenu() {
+        setToggle(true)
+    }
+
+    function closeMenu() {
+        setToggle(false)
+    }
+
   return (
         <section
         id="navbar"
@@ -11,10 +25,15 @@ const Navbar = () => {
                 <h1 className="text-coral-red font-extrabold text-2xl">Nike</h1>
                 
                 <ul className="flex flex-row gap-10 max-md:hidden text-lg text-slate-gray">
-                    <li className="">Home</li>
-                    <li className="">About Us</li>
-                    <li className="">Products</li>
-                    <li className="">Contact Us</li>
+                    {navLink.map((item) => (
+                        <li key={item.label}>
+                            <a 
+                            href={item.href}
+                            className="hover:text-coral-red">
+                                {item.label}
+                            </a>
+                        </li>
+                    ))}
                 </ul>
 
                 <div className="max-md:hidden text-lg text-slate-gray">
@@ -24,9 +43,28 @@ const Navbar = () => {
                 </div>
 
                 <div className="block md:hidden">
-                    < RxHamburgerMenu />
+                    {toggle ?(
+                        <AiOutlineClose onClick={closeMenu} />
+                    ) : (
+                        < RxHamburgerMenu onClick={openMenu} />
+                    )}
                 </div>
             </div>
+                {toggle ? (
+                    <ul className="flex flex-col items-center gap-6 mb-8 text-lg ">
+                        {navLink.map((item) => (
+                            <li key={item.label}>
+                                <a 
+                                href={item.href}
+                                className="hover:text-coral-red">
+                                    {item.label}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                ) : (
+                    <div></div>
+                )}
         </section>
     )
 }
