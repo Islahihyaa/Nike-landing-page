@@ -1,4 +1,5 @@
 import bigshoe2 from "../assets/images/big-shoe2.png"
+import Button from "../components/Button"
 
 const Offer = () => {
   return (
@@ -12,7 +13,7 @@ const Offer = () => {
                 is designed to elevate your experience, providing you with unmatched
                 quality, innovation, and a touch of elegance.</p>
             <p className='text-slate-gray text-lg mb-10 max-w-lg'>Our dedication to detail and excellence ensures your satisfaction</p>
-            <button className='rounded-full bg-coral-red py-4 px-8 text-xl text-white flex gap-4 items-center mb-16'>View Details</button>
+            <Button label='View Details'/>
         </div >
 
         <div className="flex flex-1 justify-center items-center">

@@ -1,6 +1,7 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import  bigshoe1  from "../assets/images/big-shoe1.png"
 import { statistic } from "../constants";
+import Button from "../components/Button";
 
 const Hero = () => {
   return (
@@ -14,8 +15,7 @@ const Hero = () => {
                 <span className='text-coral-red'> Nike </span> Shoes
             </h1>
             <p className='text-slate-gray text-lg mb-10 max-w-[350px]'>Discover stylish Nike arrivals, quality, comfort, and innovation for your active life.</p>
-            <button className='rounded-full bg-coral-red py-4 px-8 text-xl text-white flex gap-4 items-center mb-16'>Shop now <span className="rounded-full bg-white text-coral-red p-1"><FaArrowRightLong/></span>  </button>
-
+            <Button label='Show Now' iconURL={<FaArrowRightLong/>}/>
             <div className="flex flex-row justify-center items-start gap-10 flex-wrap w-full max-w-lg">
                 {statistic.map((stat, index)=> (
                     <div key={index}>

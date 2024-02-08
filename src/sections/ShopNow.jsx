@@ -1,4 +1,5 @@
 import { offer } from "../assets/images";
+import Button from "../components/Button";
 
 const ShopNow = () => {
   return (
@@ -19,11 +20,9 @@ const ShopNow = () => {
             <p className="text-slate-gray mb-4 text-lg">Embark on a shopping journey that redefines your experience with unbeatable deals. From premier selections to incredible savings, we offer unparalleled value that sets us apart.</p>
             
             <p className="text-slate-gray mb-6 text-lg">Navigate a realm of possibilities designed to fulfill your unique desires, surpassing the loftiest expectations. Your journey with us is nothing short of exceptional.</p>
-
-            <div className="flex flex-wrap gap-10">
-                <button className='rounded-full bg-coral-red py-4 px-8 text-xl text-white '>View Details</button>
-                <button className='rounded-full border border-slate-300 py-4 px-8 text-xl text-coral-red'>Learn More</button>
-
+            <div className="flex flex-wrap gap-6">
+                <Button label='View Details' />
+                <Button label='Learn More' />
             </div>
         </div>
     </section>
